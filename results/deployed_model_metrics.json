@@ -1,0 +1,31 @@
+{
+  "note": "Supplied held-out split; no SMOTE or scaling; Approved=1",
+  "train": {
+    "accuracy": 1.0,
+    "approved_precision": 1.0,
+    "approved_recall": 1.0,
+    "approved_f1": 1.0,
+    "rejected_precision": 1.0,
+    "rejected_recall": 1.0,
+    "rejected_f1": 1.0,
+    "roc_auc": 1.0,
+    "tn_rejected_correct": 1290,
+    "fp_rejected_as_approved": 0,
+    "fn_approved_as_rejected": 0,
+    "tp_approved_correct": 2125
+  },
+  "test": {
+    "accuracy": 0.9988290398126464,
+    "approved_precision": 0.9981203007518797,
+    "approved_recall": 1.0,
+    "approved_f1": 0.9990592662276576,
+    "rejected_precision": 1.0,
+    "rejected_recall": 0.9969040247678018,
+    "rejected_f1": 0.9984496124031008,
+    "roc_auc": 0.9999999999999999,
+    "tn_rejected_correct": 322,
+    "fp_rejected_as_approved": 1,
+    "fn_approved_as_rejected": 0,
+    "tp_approved_correct": 531
+  }
+}

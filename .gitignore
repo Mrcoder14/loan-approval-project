@@ -1,0 +1,9 @@
+.venv/ 
+__pycache__/ 
+*.py[cod] 
+history.sqlite3 
+*.sqlite3-journal 
+.streamlit/secrets.toml 
+.env 
+.env.* 
+loan_approval_model.joblib 

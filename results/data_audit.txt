@@ -1,0 +1,26 @@
+original: train=3415, test=854, exact predictor overlap=0
+original: train missing=0, test missing=0
+original: class distribution train={1: 2125, 0: 1290}, test={1: 531, 0: 323}
+engineered: train=3415, test=854, exact predictor overlap=0
+engineered: train missing=0, test missing=0
+engineered: class distribution train={1: 2125, 0: 1290}, test={1: 531, 0: 323}
+Depth-4 tree on ['cibil_score']: test accuracy=0.963700; confusion [[TN,FP],[FN,TP]]=[[320, 3], [28, 503]]
+Depth-4 tree on ['no_of_dependents', 'education', 'self_employed', 'income_annum', 'loan_amount', 'loan_term', 'cibil_score', 'residential_assets_value', 'commercial_assets_value', 'luxury_assets_value', 'bank_asset_value', 'total_asset_value', 'dti', 'atr']: test accuracy=1.000000; confusion [[TN,FP],[FN,TP]]=[[323, 0], [0, 531]]
+Tree rules (scaled terms/CIBIL):
+|--- cibil_score <= -0.28
+|   |--- loan_term <= -1.03
+|   |   |--- dti <= 2.99
+|   |   |   |--- class: 0
+|   |   |--- dti >  2.99
+|   |   |   |--- atr <= 1.05
+|   |   |   |   |--- class: 0
+|   |   |   |--- atr >  1.05
+|   |   |   |   |--- class: 1
+|   |--- loan_term >  -1.03
+|   |   |--- class: 0
+|--- cibil_score >  -0.28
+|   |--- atr <= 0.99
+|   |   |--- class: 0
+|   |--- atr >  0.99
+|   |   |--- class: 1
+
